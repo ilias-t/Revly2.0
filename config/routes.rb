@@ -1,6 +1,6 @@
 Revly2::Application.routes.draw do
 
   devise_for :users
-  root 'welcome#index'
+  root to: "welcome#index"
 
 end
