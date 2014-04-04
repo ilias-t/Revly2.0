@@ -9,4 +9,3 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Revly2::Application.config.secret_key_base = '24295bc5054bbcad5ce673862c2681a8ea70b2fac94c1c05eaa657a0c6d3e8a5b01e4b9b5567cd5a06d62ef1639d1911679a8916501d2848856b0ebf9186e49a'

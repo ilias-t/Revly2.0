@@ -19,5 +19,6 @@ module Revly2
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.secret_key_base = '24295bc5054bbcad5ce673862c2681a8ea70b2fac94c1c05eaa657a0c6d3e8a5b01e4b9b5567cd5a06d62ef1639d1911679a8916501d2848856b0ebf9186e49a'
   end
 end

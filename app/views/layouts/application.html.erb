@@ -7,6 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav id="user_nav">
+    <ul>
+      <%= render 'devise/menu/login_items' %>
+    </ul>
+  </nav>
+
   <!-- Flash notices & alerts -->
   <% if flash[:success] %>
     <div class="success"><%= flash[:success] %></p>
