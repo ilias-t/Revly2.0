@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Revly</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-  <!-- Flash notices & alerts -->
-  <% if flash[:success] %>
-    <div class="success"><%= flash[:success] %></p>
-  <% end %>
-
-  <% if flash[:error] %>
-    <div class="error"><%= flash[:error] %></p>
-  <% end %>
-
-<%= yield %>
-
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Revly2" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Revly2" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <!-- Modernizr, required for Foundation -->
+    <%= javascript_include_tag 'vendor/modernizr' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <!-- Page header -->
+    <header>
+      <!-- Foundation nav bar -->
+      <%= render 'layouts/navigation' %>
+    </header>
+    <!-- Page main container -->
+    <main role="main">
+      <!-- Foundation messages -->
+      <%= render 'layouts/messages' %>
+      <!-- Main content -->
+      <%= yield %>
+    </main>
+  </body>
 </html>

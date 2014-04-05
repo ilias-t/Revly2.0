@@ -33,6 +33,15 @@ gem 'devise'
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.1.2'
 
+# Compass required for foundation
+gem 'compass-rails'
+
+# Foundation
+gem 'foundation-rails'
+
+# Modernizr
+gem 'modernizr-rails'
+
 # DEVELOPMENT & TESTING
 group :development, :test do  
   # debugging
@@ -55,6 +64,8 @@ group :development, :test do
   # coverage
   gem 'simplecov'
 
+  # foundation setup
+  gem 'rails_layout'
 end
 
 # group :doc do
