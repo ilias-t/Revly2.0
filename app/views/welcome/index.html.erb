@@ -1,13 +1,3 @@
-<!-- Not signed in -->
-<% if !user_signed_in? %>
-  <h1>Revly</h1>
-  <nav id="user_nav">
-    <ul>
-      <%= render 'devise/menu/login_items' %>
-    </ul>
-  </nav>
-<% end %>
-
 <!-- Signed in -->
 <% if user_signed_in? %>
   
