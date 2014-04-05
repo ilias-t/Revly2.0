@@ -3,7 +3,7 @@ require 'capybara/rspec'
 
 User.delete_all
 
-describe "Login logic", js: true do #, js: true (wasn't working)
+describe "Login logic", js: true do
   let(:new_user) { FactoryGirl.build(:user) }
   let(:existing_user) { FactoryGirl.create(:user) }
 

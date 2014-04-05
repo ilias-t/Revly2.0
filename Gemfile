@@ -59,7 +59,7 @@ group :development, :test do
   # test helper libraries
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
-  gem 'ffaker', '~> 1.2.0'
+  gem 'ffaker', '~> 1.24.0'
 
   # coverage
   gem 'simplecov'

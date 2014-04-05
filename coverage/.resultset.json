@@ -3,9 +3,10 @@
     "coverage": {
       "/Users/iliastsangaris/dev/revly2/revly2/app/models/user.rb": [
         1,
+        1,
+        1,
+        1,
         null,
-        1,
-        1,
         1,
         null,
         null,
@@ -18,33 +19,16 @@
         1,
         null
       ],
-      "/Users/iliastsangaris/dev/revly2/revly2/app/controllers/welcome_controller.rb": [
-        1,
-        null,
-        null
-      ],
-      "/Users/iliastsangaris/dev/revly2/revly2/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
+      "/Users/iliastsangaris/dev/revly2/revly2/app/models/tile.rb": [
         1,
         1,
-        8,
-        4,
-        null,
-        8,
         1,
-        null,
-        null,
+        1,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1396720119
+    "timestamp": 1396730908
   }
 }
