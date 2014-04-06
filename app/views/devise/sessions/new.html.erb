@@ -1,11 +1,11 @@
 <h2>Sign in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "form" }) do |f| %>
 
-  <span class="form">Email:</span>
+  <span class="form-field">Email:</span>
   <%= f.email_field :email, autofocus: true %>
 
-  <span class="form">Password:</span>
+  <span class="form-field">Password:</span>
     <%= f.password_field :password, autocomplete: "off" %>
 
   <% if devise_mapping.rememberable? -%>

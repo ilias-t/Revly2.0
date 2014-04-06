@@ -77,6 +77,9 @@ GEM
       railties (>= 3.1.0)
       sass (>= 3.2.0)
     fssm (0.2.10)
+    gon (5.0.4)
+      actionpack (>= 2.3.0)
+      json
     hike (1.2.3)
     i18n (0.6.9)
     jasmine (2.0.0)
@@ -207,6 +210,7 @@ DEPENDENCIES
   factory_girl_rails
   ffaker (~> 1.24.0)
   foundation-rails
+  gon
   jasmine
   jbuilder (~> 1.2)
   jquery-rails

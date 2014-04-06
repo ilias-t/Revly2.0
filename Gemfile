@@ -42,6 +42,9 @@ gem 'foundation-rails'
 # Modernizr
 gem 'modernizr-rails'
 
+# Gon, for simple varible passing from Ruby to JS
+gem 'gon'
+
 # DEVELOPMENT & TESTING
 group :development, :test do  
   # debugging

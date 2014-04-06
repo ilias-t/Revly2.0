@@ -27,6 +27,8 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   # Test helper methods
   config.include SpecTestHelper
+  # Root helper methods
+  config.include Rails.application.routes.url_helpers
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:

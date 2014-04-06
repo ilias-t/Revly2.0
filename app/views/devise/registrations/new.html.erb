@@ -1,18 +1,18 @@
 <h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "form" }) do |f| %>
   <%= devise_error_messages! %>
 
-  <span class="form">Email:</span>
+  <span class="form-field">Email:</span>
   <%= f.email_field :email, autofocus: true, autocomplete: "on" %>
 
-  <span class="form">Username:</span>
+  <span class="form-field">Username:</span>
   <%= f.text_field :username, autocomplete: "off" %>
 
-  <span class="form">Password:</span>
+  <span class="form-field">Password:</span>
   <%= f.password_field :password, autocomplete: "off" %>
 
-  <span class="form">Password confirmation:</span>
+  <span class="form-field">Password confirmation:</span>
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
 
   <%= f.submit "Sign up" %>

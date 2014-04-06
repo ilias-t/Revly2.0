@@ -1,6 +1,17 @@
 Revly2::Application.routes.draw do
 
-  devise_for :users
+  # Home page
   root to: "welcome#index"
+
+  # Devise routes
+  devise_for :users
+
+  # Custom RESTful routes
+  resources :users do
+    resources :tiles, except: [:edit, :update]
+  end
+
+  #Get all tiles
+  get "/tiles", to: "tiles#all"
 
 end

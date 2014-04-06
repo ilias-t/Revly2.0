@@ -1,7 +1,7 @@
 <%# add navigation links to this file %>
 <% if user_signed_in? %>
   <li class="active">
-    <a href="#">Post a Tile</a>
+    <%= link_to 'Post a Tile', new_user_tile_path(@user) %>
   </li>
 <% end %>
 <%= render 'devise/menu/login_items' %>
