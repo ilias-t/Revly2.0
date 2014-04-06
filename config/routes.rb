@@ -11,7 +11,7 @@ Revly2::Application.routes.draw do
     resources :tiles, except: [:edit, :update]
   end
 
-  #Get all tiles
-  get "/tiles", to: "tiles#all"
+  # Get all tiles
+  get "/tiles", to: "tiles#all" # Is this RESTFUL??
 
 end

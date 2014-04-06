@@ -1,7 +1,6 @@
 <%= form_for [@user, @tile], html: { class: "form new-tile-message" } do |f| %>
 
-  <span class="form-field">Share a music moment:</span>
-   <%= f.text_field :message, autofocus: true, autocomplete: "off" %>
+   <%= f.text_field :message, autofocus: true, autocomplete: "off", placeholder: "What's your moment?" %>
 
   <%= f.hidden_field :color, autocomplete: "off" %>
 

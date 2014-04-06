@@ -3,7 +3,10 @@
   
   <h2>You are <%=current_user.username%></h2>
 
-  <script>
+  <script type="template" class="template">
+    <div class="tile">
+      <%%= tile.get('message') %> //requires backbone
+    </div>
   </script>
 
 <% end %>
