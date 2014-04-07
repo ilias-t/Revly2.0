@@ -8,7 +8,7 @@ Revly2::Application.routes.draw do
 
   # Custom RESTful routes
   resources :users, only: [:show] do
-    resources :tiles, only: [:index, :create, :show, :destroy]
+    resources :tiles, only: [:index, :create, :show, :destroy, :new]
   end
 
   # Get all tiles

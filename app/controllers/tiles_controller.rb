@@ -5,6 +5,10 @@ class TilesController < ApplicationController
     render json: @tiles
   end
 
+  def new
+    @tile = Tile.new
+  end
+
   def index
     @tiles = Tile.order("created_at DESC").where(user_id: params[:user_id])
     render json: @tiles

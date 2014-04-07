@@ -1,4 +1,4 @@
-var Tile = Backbone.Model.extend({
+var TileModel = Backbone.Model.extend({
   urlRoot: "/users/" + gon.currentUser.id + "/tiles",
   defaults: {
     message: ""

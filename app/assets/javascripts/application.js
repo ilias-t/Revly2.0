@@ -16,10 +16,13 @@
 //= require foundation
 //= require underscore
 //= require backbone
-
 //= require_tree .
 
-// Foundation's Javascript
+// Initialize Foundation's Javascript
 $(function() {
   $(document).foundation();
 });
+
+// Initialize Backbone Router
+router = new AppRouter();
+Backbone.history.start();

@@ -1,4 +1,4 @@
-var User = Backbone.Model.extend({
+var UserModel = Backbone.Model.extend({
   urlRoot: "/users",
   defaults: {
     "email": "",
