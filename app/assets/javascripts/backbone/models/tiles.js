@@ -1,8 +1,7 @@
-var Tile = Backbone.Model.extend({
-  urlRoot: "/tiles" // How do we correctly nest routes?
+var Tile = Backbone.RelationalModel.extend({
+  urlRoot: "/tiles/"
 });
 
 var TileCollection = Backbone.Collection.extend({
-  model: Tile,
-  url: "/tiles"
+  model: Tile
 });
