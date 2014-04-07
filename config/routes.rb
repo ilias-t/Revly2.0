@@ -7,8 +7,8 @@ Revly2::Application.routes.draw do
   devise_for :users
 
   # Custom RESTful routes
-  resources :users do
-    resources :tiles, except: [:edit, :update]
+  resources :users, only: [:show] do
+    resources :tiles, only: [:index, :create, :show, :destroy]
   end
 
   # Get all tiles

@@ -16,7 +16,7 @@
 //= require foundation
 //= require underscore
 //= require backbone
-//= require backbone_relational
+
 //= require_tree .
 
 // Foundation's Javascript
