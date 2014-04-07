@@ -2,8 +2,6 @@ require 'spec_helper'
 require 'capybara/rspec'
 require 'pry'
 
-User.delete_all
-
 describe "Login system", js: true do
   include SpecTestHelper
 
@@ -21,8 +19,9 @@ describe "Login system", js: true do
 
   it "allows users to sign in" do 
     signin(existing_user)
-    binding.pry
-    expect(page).to have_content new_user.username
+    # binding.pry
+    save_and_open_page
+    expect(page).to have_content existing_user.username
   end
   
   it "allows users to sign out" do

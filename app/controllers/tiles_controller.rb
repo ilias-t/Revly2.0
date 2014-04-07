@@ -7,6 +7,9 @@ class TilesController < ApplicationController
 
   def new
     @tile = Tile.new
+    @user = current_user
+    gon.currentUser = @user
+    render :new
   end
 
   def index
@@ -16,7 +19,7 @@ class TilesController < ApplicationController
 
   def create
     @tile = Tile.new(tile_params)
-    if current_user.post(@tile)
+    if current_user.post(@tile) # Tile is saved with a reference to the current_user
       render json: @tile
     else
       render status: 400, nothing: true

@@ -58,6 +58,7 @@ group :development, :test do
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'launchy'
+  gem 'database_cleaner'
 
   # test helper libraries
   gem 'shoulda-matchers'

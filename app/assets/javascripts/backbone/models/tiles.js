@@ -6,5 +6,5 @@ var TileModel = Backbone.Model.extend({
 });
 
 var TileCollection = Backbone.Collection.extend({
-  model: Tile
+  model: TileModel
 });

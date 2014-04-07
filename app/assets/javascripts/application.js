@@ -24,5 +24,5 @@ $(function() {
 });
 
 // Initialize Backbone Router
-router = new AppRouter();
+new AppRouter();
 Backbone.history.start();
