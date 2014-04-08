@@ -1,13 +1,12 @@
-var WelcomeView = Backbone.View.extend({
-  tagName: "h1",
-  className: "welcome-message",
-  events: {
+// var WelcomeView = Backbone.View.extend({
 
-  },
-  initialize: function() {
+//   tagName: "div",
 
-  },
-  render: function() {
-    
-  }
-});
+//   template: _.template($("script.welcome-template").html()),
+  
+//   render: function() {
+//     console.log("welcome view rendering!");
+//     this.$el.html(this.template({user: this.model}));
+//   }
+
+// });

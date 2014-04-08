@@ -4,10 +4,4 @@ var UserModel = Backbone.Model.extend({
     "email": "",
     "username": ""
   }
-  
 });
-
-// var UserCollection = Backbone.Collection.extend({
-
-// });
-

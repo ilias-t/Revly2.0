@@ -1,11 +1,15 @@
+<h2>Music moments</h2>
+
 <!-- Signed in -->
 <% if user_signed_in? %>
   
-  <h2>You are <%=current_user.username%></h2>
+  <script type="text/template" id="welcome-template">
+    <h2>You are <%%= user.get("username") %></h2>
+  </script>
 
-  <script type="template" class="template">
+  <script type="text/template" id="all-tile-template">
     <div class="tile">
-      <%%= tile.get('message') %> //requires backbone
+      <%%= this.model.get("message") %> //requires backbone
     </div>
   </script>
 

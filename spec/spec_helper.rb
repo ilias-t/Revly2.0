@@ -45,8 +45,7 @@ RSpec.configure do |config|
   # instead of true.
   config.use_transactional_fixtures = false
 
-  # Database cleaner
-
+  # Database cleaner for testing with JS
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)
   end

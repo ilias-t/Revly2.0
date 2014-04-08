@@ -7,7 +7,7 @@ Revly2::Application.routes.draw do
   devise_for :users
 
   # Custom RESTful routes
-  resources :users, only: [:show] do
+  resources :users, only: [:show, :index] do
     resources :tiles, only: [:index, :create, :show, :destroy, :new]
   end
 

@@ -16,13 +16,22 @@
 //= require foundation
 //= require underscore
 //= require backbone
-//= require_tree .
+//= require_tree ./backbone/models
+//= require_tree ./backbone/collections
+//= require_tree ./backbone/views
+//= require_tree ./backbone/templates
+//= require_tree ./backbone/routers
 
-// Initialize Foundation's Javascript
-$(function() {
+
+// Backbone
+$(document).ready(function() {
   $(document).foundation();
+  tile = new TileModel();
+  tiles = new TileCollection();
+  tiles.fetch({
+    success: function(){
+      new AppRouter(tiles);
+      Backbone.history.start();
+    }
+  });
 });
-
-// Initialize Backbone Router
-new AppRouter();
-Backbone.history.start();
