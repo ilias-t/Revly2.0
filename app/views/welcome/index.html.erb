@@ -4,12 +4,14 @@
 <% if user_signed_in? %>
 <h2>You are <%= @user.username %></h2>
   
-  <script type="text/html" id="welcome-template">
-    <h2>You are <%%= user.get("username") %></h2>
-  </script>
 
-  <script type="text/html" id="all-tile-template">
+  <script type="text/html" id="single-tile-template">
       <p><%%= this.model.get("message") %></p>
   </script>
 
 <% end %>
+
+
+  <script type="text/html" id="welcome-template">
+    <h2>You are <%%= user.get("username") %></h2>
+  </script>

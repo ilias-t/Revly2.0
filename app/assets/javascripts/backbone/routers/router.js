@@ -4,19 +4,17 @@ var AppRouter = Backbone.Router.extend({
     "users/:user_id/tiles/new": "newTile" // FIXME
   },
 
-  initialize: function(collection) {
-    this.collection = collection;
-  },
-
   index: function(){
-    this.loadView(new AllTileView({collection: this.collection})); //FIXME error!!
-    alert("Index route has been called..");
+    this.loadView(new AllTileView({collection: tiles}));
+    
   },
   newTile: function() {
     alert("You're Posting a new tile!");
   },
 
   loadView: function(view) {
+    console.log(view);
+    window.theview = view;
     $("body").append(view.el);
   }
 });

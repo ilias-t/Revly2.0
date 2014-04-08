@@ -4,8 +4,7 @@ var AllTileView = Backbone.View.extend({
 
   className: "all-tiles",
 
-  initialize: function(options) {
-    this.tiles = options.tiles; //necessary?
+  initialize: function() {
     console.log("Initialized AllTileView...");
     this.listenTo(this.collection, "add", this.addOne);
     this.listenTo(this.collection, "reset", this.addAll);
@@ -32,15 +31,16 @@ var TileView = Backbone.View.extend({
   },
 
   initialize: function() {
-    this.collection = collection;
-    this.template = _.template($("#all-tile-template").html());
+    this.template = _.template($("#single-tile-template").html());
     this.listenTo(this.model, "change", this.render);
+    this.model.fetch();
     this.render();
   },
 
   render: function() {
-    console.log("all tile view rendering!");
-    // this.$el.html(this.template());
+    console.log("Single tile view rendering!");
+    console.log(this.template({model: this.model}));
+    this.$el.html(this.template({model: this.model}));
   },
 
   playTile: function() {

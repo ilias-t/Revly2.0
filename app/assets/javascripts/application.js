@@ -26,11 +26,11 @@
 // Backbone
 $(document).ready(function() {
   $(document).foundation();
-  tile = new TileModel();
-  tiles = new TileCollection();
+  window.tile = new TileModel();
+  window.tiles = new TileCollection();
   tiles.fetch({
     success: function(){
-      new AppRouter(tiles);
+      new AppRouter();
       Backbone.history.start();
     }
   });
