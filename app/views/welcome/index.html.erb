@@ -1,17 +1,17 @@
-<h2>Music moments</h2>
+<!-- Signed out -->
+<%if !user_signed_in? %>
+  <h2>Music moments</h2>
+<% end %>
 
 <!-- Signed in -->
 <% if user_signed_in? %>
-<h2>You are <%= @user.username %></h2>
-  
-
+  <h2>Welcome <%= @user.username %></h2>
   <script type="text/html" id="single-tile-template">
-      <p><%%= this.model.get("message") %></p>
+    <div class="tile-container">
+      <div class="tile-message">
+        <%%= this.model.get("message") %>
+      </div>
+      <span><%%= this.model.get("sound_id") %></span>
+    </div>
   </script>
-
 <% end %>
-
-
-  <script type="text/html" id="welcome-template">
-    <h2>You are <%%= user.get("username") %></h2>
-  </script>

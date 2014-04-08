@@ -19,8 +19,6 @@ describe "Login system", js: true do
 
   it "allows users to sign in" do 
     signin(existing_user)
-    # binding.pry
-    save_and_open_page
     expect(page).to have_content existing_user.username
   end
   
