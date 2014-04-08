@@ -22,11 +22,10 @@ var AllTileView = Backbone.View.extend({
     this.$el.append(view.el);
   }
 });
+
 var TileView = Backbone.View.extend({
 
   tagName: "li",
-
-  template: _.template($("#all-tile-template").html()),
 
   events: {
     "click div.tile": "playTile"
@@ -34,13 +33,14 @@ var TileView = Backbone.View.extend({
 
   initialize: function() {
     this.collection = collection;
+    this.template = _.template($("#all-tile-template").html());
     this.listenTo(this.model, "change", this.render);
     this.render();
   },
 
   render: function() {
     console.log("all tile view rendering!");
-    this.$el.html(this.template({tile: this.model}));
+    // this.$el.html(this.template());
   },
 
   playTile: function() {

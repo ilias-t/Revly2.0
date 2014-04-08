@@ -1,14 +1,11 @@
 require 'spec_helper'
 require 'capybara/rspec'
 
-User.delete_all
-Tile.delete_all
-
 describe "Tile posting flow", js: true do
   include SpecTestHelper
   # let(:user) { FactoryGirl.create(:user) }
   let(:new_user) { FactoryGirl.build(:user) }
-  let(:tile) { FactoryGirl.create(:tile) }
+  let(:tile) { FactoryGirl.build(:tile) }
 
   it "allows a user to post a tile" do
     visit root_path

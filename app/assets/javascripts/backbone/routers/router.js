@@ -1,7 +1,7 @@
 var AppRouter = Backbone.Router.extend({
   routes: {
     "": "index",
-    "users/:user_id/tiles/new": "newTile"
+    "users/:user_id/tiles/new": "newTile" // FIXME
   },
 
   initialize: function(collection) {

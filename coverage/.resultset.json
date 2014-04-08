@@ -24,14 +24,23 @@
         1,
         null
       ],
+      "/Users/iliastsangaris/dev/revly2/revly2/app/models/tile.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/iliastsangaris/dev/revly2/revly2/app/controllers/welcome_controller.rb": [
         1,
         null,
         1,
         null,
-        7,
+        2,
         null,
-        7,
+        2,
         null,
         null,
         null
@@ -47,17 +56,17 @@
         null,
         1,
         1,
-        7,
         2,
-        null,
-        7,
         1,
+        null,
+        2,
+        0,
         null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1396893227
+    "timestamp": 1396973168
   }
 }

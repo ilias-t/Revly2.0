@@ -2,15 +2,14 @@
 
 <!-- Signed in -->
 <% if user_signed_in? %>
+<h2>You are <%= @user.username %></h2>
   
-  <script type="text/template" id="welcome-template">
+  <script type="text/html" id="welcome-template">
     <h2>You are <%%= user.get("username") %></h2>
   </script>
 
-  <script type="text/template" id="all-tile-template">
-    <div class="tile">
-      <%%= this.model.get("message") %> //requires backbone
-    </div>
+  <script type="text/html" id="all-tile-template">
+      <p><%%= this.model.get("message") %></p>
   </script>
 
 <% end %>
