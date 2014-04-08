@@ -9,7 +9,6 @@ describe "Tile feed", js: true do
   it "displays tiles on the index page" do
     visit root_path
     signin(existing_user)
-    binding.pry
     latest_tile_message = Tile.last.message # Most recently posted tile's message
     expect(page).to have_content latest_tile_message
   end

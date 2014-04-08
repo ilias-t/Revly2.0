@@ -17,6 +17,11 @@ class TilesController < ApplicationController
     render json: @tiles
   end
 
+  def show
+    @tile = Tile.find(params[:id])
+    render json: @tile
+  end
+
   def create
     @tile = Tile.new(tile_params)
     if current_user.post(@tile) # Tile is saved with a reference to the current_user

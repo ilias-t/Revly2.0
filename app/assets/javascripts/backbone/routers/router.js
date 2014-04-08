@@ -5,8 +5,8 @@ var AppRouter = Backbone.Router.extend({
   },
 
   index: function(){
-    this.loadView(new AllTileView({collection: tiles}));
-    
+    tileFeed = new AllTileView({collection: tiles});
+    this.loadView(tileFeed);
   },
   newTile: function() {
     alert("You're Posting a new tile!");

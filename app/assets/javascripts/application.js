@@ -25,13 +25,14 @@
 
 // Backbone
 $(document).ready(function() {
-  $(document).foundation();
+  $(this).foundation(); // Initialize foundation
+
+  // Settup model and controller variables
   window.tile = new TileModel();
   window.tiles = new TileCollection();
-  tiles.fetch({
-    success: function(){
-      new AppRouter();
-      Backbone.history.start();
-    }
-  });
+  // Get tiles from DB
+  tiles.fetch();
+  //Initialize router
+  new AppRouter();
+  Backbone.history.start();
 });

@@ -18,6 +18,7 @@ var AllTileView = Backbone.View.extend({
   addOne: function(tile) {
     console.log("add one tile");
     var view = new TileView({model: tile});
+    console.log(view.el);
     this.$el.append(view.el);
   }
 });
