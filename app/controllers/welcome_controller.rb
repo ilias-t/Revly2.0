@@ -1,10 +1,17 @@
 class WelcomeController < ApplicationController
 
   def index
-    #From database to Ruby
+    # Current User from DB to backend
     @user = current_user
-    #From Ruby to JS
+    # Current User from backend to frontend
     gon.currentUser = @user
+  end
+
+  def search_song
+    client = Soundcloud.new(client_id: SOUNDCLOUD_CLIENT_ID)
+    @sounds = client.get("/tracks", q: "#{params[:query]}", limit: 10, order: "hotness")
+    gon.lastSearch = @sounds
+    render json: @sounds
   end
 
 end

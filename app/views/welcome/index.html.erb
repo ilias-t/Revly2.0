@@ -6,12 +6,6 @@
 <!-- Signed in -->
 <% if user_signed_in? %>
   <h2>Welcome <%= @user.username %></h2>
-  <script type="text/html" id="single-tile-template">
-    <div class="tile-container">
-      <div class="tile-message">
-        <%%= this.model.get("message") %>
-      </div>
-      <span><%%= this.model.get("sound_id") %></span>
-    </div>
-  </script>
+  <%= render 'tile_template' %>
+  <%= render 'search_song_template' %>
 <% end %>

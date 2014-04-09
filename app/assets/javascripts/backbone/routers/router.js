@@ -14,7 +14,6 @@ var AppRouter = Backbone.Router.extend({
     alert("You're Posting a new tile!");
   },
   loadView: function(view) {
-    window.theview = view;
     $("main[role=main]").append(view.el);
   }
 });

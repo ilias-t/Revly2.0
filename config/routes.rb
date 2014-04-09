@@ -12,6 +12,9 @@ Revly2::Application.routes.draw do
   end
 
   # Get all tiles
-  get "/tiles", to: "tiles#all" # Is this RESTFUL??
+  get "/tiles", to: "tiles#all"
+
+  # Get soundcloud search results
+  get "/searchsong", to: "welcome#search_song"
 
 end

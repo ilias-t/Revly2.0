@@ -21,6 +21,7 @@
 //= require_tree ./backbone/views
 //= require_tree ./backbone/templates
 //= require_tree ./backbone/routers
+//= require_tree .
 
 
 // Backbone

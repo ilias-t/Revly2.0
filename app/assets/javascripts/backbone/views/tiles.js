@@ -23,7 +23,6 @@ var TileView = Backbone.View.extend({
   initialize: function() {
     this.template = _.template($("#single-tile-template").html());
     this.listenTo(this.model, "change", this.render);
-    this.model.fetch();
     this.render();
   },
   render: function() {
