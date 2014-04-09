@@ -16,7 +16,7 @@ var SoundSearchCollection = Backbone.Collection.extend({
   url: "/searchsong"
 });
 
-// View
+// View FIXME
 var SoundSearchView = Backbone.View.extend({
   tagName: "ul",
   className: "sound-search-results",
@@ -30,7 +30,7 @@ var SoundSearchView = Backbone.View.extend({
   },
   render: function() {
     var view = this.$el.html(this.template({collection: this.collection}));
-    $("main[role=main]").append(view);
+    $("main[role=main]").append(view.el);
   }
 });
 
