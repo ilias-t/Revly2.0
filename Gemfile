@@ -36,6 +36,9 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # Compass required for foundation
 gem 'compass-rails'
 
+# Angular
+gem 'angularjs-rails'
+
 # Foundation
 gem 'foundation-rails'
 

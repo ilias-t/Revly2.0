@@ -1,8 +1,17 @@
-<script type="text/html" id="single-tile-template">
-  <div class="tile-container">
-    <div class="tile-message">
-      <%%= this.model.get("message") %>
+<div class="tiles-wrapper" ng-controller="TileController">
+    <h1>Tiles</h1>
+    <div class="tile-message" ng-repeat="(id, tile) in tiles">  <!-- ng-repeat="tile in tiles track by tile.id" -->
+      {{tile.message}}
     </div>
-    <span><%%= this.model.get("sound_id") %></span>
-  </div>
-</script>
+</div>
+
+
+
+<!-- <script type="text/html" id="single-tile-template">
+//   <div class="tile-container">
+//     <div class="tile-message">
+//       <%%= this.model.get(#"message") %>
+//     </div>
+//     <span><%%= this.model.get(#"sound_id") %></span>
+//   </div>
+// </script>

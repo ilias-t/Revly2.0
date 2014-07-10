@@ -4,12 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Revly" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Revly" %>">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
     <!-- Modernizr, required for Foundation -->
     <%= javascript_include_tag 'vendor/modernizr' %>
     <!-- gon -->
     <%= include_gon %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', controller_name %>
     <%= csrf_meta_tags %>
   </head>
   <body>
