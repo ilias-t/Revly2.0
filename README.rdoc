@@ -1,28 +1,26 @@
-== README
+== REVLY README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Revly is a music social sharing service. Users can post a song-gram by layering a song behind a message.
 
-Things you may want to cover:
+Technologies
 
-* Ruby version
+* Rails
 
-* System dependencies
+* Backbone.js
 
-* Configuration
+* Angular.js
 
-* Database creation
+* Sass
 
-* Database initialization
+* Capybara
 
-* How to run the test suite
+* Rspec
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Jasmine
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Creators
+
+* Ilias Tsangaris
+
+* Francisco Echeverri
