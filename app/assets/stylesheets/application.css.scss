@@ -14,14 +14,20 @@
  *= require_self
  */
 
- // .form {
- //  float: none;
- // }
+.tiles-wrapper {
+  position: absolute;
+  width: 100%;
+  .tile-wrapper {
+    position: relative;
+    background-color: blue;
+    color: white;
+    margin: 2em auto;
+    width: 50%;
+    text-align: center;
+  }
+}
 
 
-.each-tile {
-  display: block;
- }
 
 #search-button {
   width: 5em;

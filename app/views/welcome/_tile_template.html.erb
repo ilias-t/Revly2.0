@@ -1,7 +1,9 @@
 <div class="tiles-wrapper" ng-controller="TileController">
     <h1>Tiles</h1>
-    <div class="tile-message" ng-repeat="(id, tile) in tiles">  <!-- ng-repeat="tile in tiles track by tile.id" -->
-      {{tile.message}}
+    <div ng-repeat="(id, tile) in tiles">  <!-- ng-repeat="tile in tiles track by tile.id" -->
+          <div class="tile-wrapper">
+               {{tile.message}}
+          </div>
     </div>
 </div>
 
